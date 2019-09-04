@@ -61,7 +61,7 @@ public class WeixinAppPayService {
         //总金额 Int 订单总金额，单位为分
         prePayTrans.put("total_fee", orderAmt.multiply(new BigDecimal(100)).intValue());
         // 调用微信支付API的机器IP
-        prePayTrans.put("spbill_create_ip","47.99.72.38");
+        prePayTrans.put("spbill_create_ip","192.168.015.12");
         //交易类型
         prePayTrans.put("trade_type", "APP");
         //报文签名  签名类型，目前支持HMAC-SHA256和MD5，默认为MD5
