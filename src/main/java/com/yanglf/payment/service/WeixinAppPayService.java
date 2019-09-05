@@ -117,7 +117,7 @@ public class WeixinAppPayService {
         String nonceStr = UUID.randomUUID().toString().replace("-", "");
         payTrans.put("noncestr", nonceStr);
         String timeStamp = Long.toString(System.currentTimeMillis() / 1000L);
-        payTrans.put("timeStamp", timeStamp);
+        payTrans.put("timestamp", timeStamp);
         //对报文签名
         String sign = SignUtil.transSign(payTrans, key);
 
